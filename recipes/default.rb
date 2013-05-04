@@ -1,4 +1,4 @@
-service "ssh"
+node[:ssh][:service_name]
 
 ssh_config "Port" do
   string "Port #{node[:ssh][:port]}"
