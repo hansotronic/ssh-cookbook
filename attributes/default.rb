@@ -1,3 +1,10 @@
+default[:ssh][:service_name] = case node[:platform_family]
+                                     when "rhel", "fedora","suse"
+                                       "sshd"
+                                     else
+                                       "ssh"
+                                     end
+
 # Port on which openssh listens on
 default[:ssh][:port] = "22"
 #
