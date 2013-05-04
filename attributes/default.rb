@@ -40,7 +40,7 @@ default[:ssh][:use_dns] = "no"
 # * deploy (all apps get their own system user, and belong to the deploy group)
 # * admin (system users with admin privileges. Pretty much everyone that is
 #   expected to be in charge of your infrastructure).
-default[:ssh][:allowed_groups] = []
+default[:ssh][:allowed_groups] = ["sysadmin"]
 default[:ssh][:allowed_users] = []
 #
 # This is useful when you want to disable users.  The bootstrap cookbook adds
