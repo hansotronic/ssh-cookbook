@@ -1,4 +1,4 @@
-node[:ssh][:service_name]
+service node[:ssh][:service_name]
 
 ssh_config "Subsystem sftp" do
   string "Subsystem sftp internal-sftp"
